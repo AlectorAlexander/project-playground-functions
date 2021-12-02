@@ -26,10 +26,10 @@ function footballPoints(wins, ties) {
     pontosGanhos = wins * 3;
   }
   resultado = pontosEmpates + pontosGanhos;
-  return resultado
+  return resultado;
   
  
-}console.log(footballPoints(14, 8))
+}
 
 // Desafio 6
 function highestCount() {
@@ -37,8 +37,20 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // ESSESSESSE
+//Referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+
+function catAndMouse(mouse, cat1, cat2) {
+  var PosicaoDoGato1 = Math.abs(cat1 - mouse)
+  var PosicaoDoGato2 = Math.abs(cat2 - mouse)
+  var returno;
+    if (PosicaoDoGato1 < PosicaoDoGato2){
+      returno = "cat1";
+    } else if (PosicaoDoGato2 < PosicaoDoGato1){
+      returno = "cat2"
+    } else {
+      returno = "os gatos trombam e o rato foge"
+    }
+ return returno
 }
 
 // Desafio 8
