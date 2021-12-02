@@ -9,13 +9,15 @@ function calcArea() {
 }
 
 // Desafio 3
-function splitSentence() {
-  // ESSE
+function splitSentence(string) {
+
+  return string.split(" ")
 }
 
 // Desafio 4
-function concatName() {
-  // ESSE
+function concatName(array) {
+ var returno = array[array.length - 1] + ", " + array[0]
+ return returno;
 }
 
 // Desafio 5
