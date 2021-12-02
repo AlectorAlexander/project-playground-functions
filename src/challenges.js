@@ -37,9 +37,17 @@ function footballPoints(wins, ties) {
   } 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+// Referência: https://stackoverflow.com/questions/21255138/how-does-the-math-max-apply-work
+function highestCount(array) {
+ let maiorNumero = Math.max(...array);
+ let resultado = 0;
+ for (const key in array) {
+   if (array[key] == maiorNumero) {
+     resultado += 1;
+     
+   }
+ }return resultado;
+} 
 
 // Desafio 7
 //Referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
@@ -59,11 +67,23 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(array) {
+  var string = []
+  for (let n in array){
+    if (array[n] % 3 == 0 && array[n] % 5 == 0){
+      string.push("fizzBuzz")
+    } else if (array[n] % 5 == 0){
+      string.push("buzz")
+    } else if (array[n] % 3 == 0){
+      string.push("fizz")
+    } else{
+      string.push("bug!")
+    }
+  }return string 
+} 
 
 // Desafio 9
+//Referência: https://ricardo-reis.medium.com/string-replace-para-substituir-substrings-no-javascript-6db625e5fbc5
 function encode(string) {
   for (let index = 0; index < string.length; index++) {
     
