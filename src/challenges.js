@@ -1,11 +1,16 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(sim, ounao) {
+  if(sim == true && ounao == true){
+    return true
+  }else{
+    return false
+  }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+ var returno = base * height / 2;
+ return returno;
 }
 
 // Desafio 3
