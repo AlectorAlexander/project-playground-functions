@@ -10,18 +10,26 @@ function calcArea() {
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+  // ESSE
 }
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  // ESSE
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  let pontosEmpates= ties;
+  let pontosGanhos = 0;
+  if(wins > 1){
+    pontosGanhos = wins * 3;
+  }
+  resultado = pontosEmpates + pontosGanhos;
+  return resultado
+  
+ 
+}console.log(footballPoints(14, 8))
 
 // Desafio 6
 function highestCount() {
@@ -30,7 +38,7 @@ function highestCount() {
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  // ESSESSESSE
 }
 
 // Desafio 8
