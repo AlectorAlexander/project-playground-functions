@@ -93,11 +93,15 @@ function generatePhoneNumber(numeros) {
   resultado = "Array com tamanho incorreto."
 }
  return resultado;
-} console.log(generatePhoneNumber([0,2,1,3,4,1,4,2,7,8,1,9,9,4]))
+} 
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+  var resultado = false;
+  if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineA + lineB && lineA > lineB - lineC && lineB > lineA - lineC && lineC > lineB - lineA) {
+    resultado = true;
+  }
+  return resultado
 }
 
 // Desafio 13
